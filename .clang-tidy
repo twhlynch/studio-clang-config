@@ -1,0 +1,61 @@
+Checks: >
+  -*,
+
+  # readability
+  readability-*,
+
+  # case conventions
+  readability-identifier-naming,
+
+  # magic numbers
+  readability-magic-numbers,
+
+  # avoid dangerous / surprising constructs
+  bugprone-*,
+  cppcoreguidelines-*,
+  clang-analyzer-*,
+  modernize-*,
+  misc-*
+  performance-prefer-preincrement,
+  portability-*,
+  -misc-no-recursion,
+  -modernize-use-trailing-return-type,
+
+  # global variables must be in scope
+  cppcoreguidelines-avoid-non-const-global-variables,
+
+  # no using namespace std;
+  google-build-using-namespace,
+
+  # macros should be used sparingly
+  cppcoreguidelines-macro-usage,
+
+  # initialise variables when declared
+  cppcoreguidelines-init-variables,
+
+WarningsAsErrors: ""
+FormatStyle: file
+CheckOptions:
+  # ClassNames
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+
+  # variable_names
+  - key: readability-identifier-naming.VariableCase
+    value: lower_case
+
+  - key: readability-identifier-naming.FunctionCase
+    value: lower_case
+
+  - key: readability-identifier-naming.PrivateMemberCase
+    value: lower_case
+
+  # MACRO_NAMES
+  - key: readability-identifier-naming.MacroDefinitionCase
+    value: UPPER_CASE
+
+  # allow common literals
+  - key: readability-magic-numbers.IgnoredIntegerValues
+    value: "0;1;2"

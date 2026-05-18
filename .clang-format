@@ -1,0 +1,35 @@
+# MARK: Base
+
+Language: Cpp
+
+# based on google
+BasedOnStyle: Google
+
+# MARK: Spacing & Indentation
+
+# 4 space indenting
+IndentWidth: 4
+ContinuationIndentWidth: 4
+TabWidth: 4
+
+# spaces not tabs
+UseTab: Never
+
+# 80 column limit
+ColumnLimit: 80
+
+# indent and align multi line statements
+AlignAfterOpenBracket: Align
+BinPackArguments: false
+BinPackParameters: false
+
+# no access modifier indent
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+
+# apply column limit to comments
+ReflowComments: true
+
+# right alignment
+PointerAlignment: Right
+ReferenceAlignment: Right
